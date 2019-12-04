@@ -1,0 +1,8 @@
+uuid: a5036935-fe09-49e2-8181-846781982a13
+langcode: en
+status: true
+dependencies: {  }
+id: francais_court
+label: 'Français court'
+locked: false
+pattern: d/m/Y

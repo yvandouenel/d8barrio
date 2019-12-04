@@ -1,0 +1,15 @@
+uuid: 06b0ae76-a237-4313-a64c-15b71174faf4
+langcode: en
+status: true
+dependencies: {  }
+name: teaser_spectacle
+label: 'teaser spectacle'
+effects:
+  25ad6b13-e1ee-42cf-a878-c456c7789e6e:
+    uuid: 25ad6b13-e1ee-42cf-a878-c456c7789e6e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 694
+      anchor: center-center

@@ -1,0 +1,19 @@
+uuid: 3beadad1-c66f-483f-bfdb-2b5c1e1733ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duree
+    - node.type.show
+id: node.show.field_duree
+field_name: field_duree
+entity_type: node
+bundle: show
+label: Durée
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

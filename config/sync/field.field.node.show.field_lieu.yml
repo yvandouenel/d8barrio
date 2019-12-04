@@ -1,0 +1,29 @@
+uuid: 442695ea-00f0-4d96-897a-808e6a224090
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu
+    - node.type.show
+    - taxonomy.vocabulary.lieu_spectacle
+id: node.show.field_lieu
+field_name: field_lieu
+entity_type: node
+bundle: show
+label: Lieu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      lieu_spectacle: lieu_spectacle
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

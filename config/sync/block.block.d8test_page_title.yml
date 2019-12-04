@@ -1,0 +1,29 @@
+uuid: 691d82d6-6584-418f-aa26-9810914cb988
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - d8test
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: d8test_page_title
+theme: d8test
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      show: show
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

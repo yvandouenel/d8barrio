@@ -1,0 +1,21 @@
+uuid: 24880489-501c-4e0e-b13d-ae12275b9db6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tarif
+    - node.type.show
+id: node.show.field_tarif
+field_name: field_tarif
+entity_type: node
+bundle: show
+label: Tarif
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 14€
+default_value_callback: ''
+settings: {  }
+field_type: string

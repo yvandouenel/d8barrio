@@ -1,0 +1,29 @@
+uuid: 43109a64-fc8a-4c80-9d7b-e14753e473b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_festival
+    - node.type.show
+    - taxonomy.vocabulary.festival
+id: node.show.field_festival
+field_name: field_festival
+entity_type: node
+bundle: show
+label: Festival
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      festival: festival
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

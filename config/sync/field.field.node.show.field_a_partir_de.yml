@@ -1,0 +1,19 @@
+uuid: dd4acee9-032e-45d5-bd19-7cd29da6c205
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a_partir_de
+    - node.type.show
+id: node.show.field_a_partir_de
+field_name: field_a_partir_de
+entity_type: node
+bundle: show
+label: 'A partir de'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

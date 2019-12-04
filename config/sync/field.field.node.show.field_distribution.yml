@@ -1,0 +1,21 @@
+uuid: 04cf4f94-3121-4527-a8ff-cb9208cc3cbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_distribution
+    - node.type.show
+  module:
+    - text
+id: node.show.field_distribution
+field_name: field_distribution
+entity_type: node
+bundle: show
+label: Distribution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

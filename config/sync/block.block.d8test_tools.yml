@@ -1,0 +1,27 @@
+uuid: 74023d71-1b22-4b79-a07e-e3195d1ed82d
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - d8test
+_core:
+  default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
+id: d8test_tools
+theme: d8test
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

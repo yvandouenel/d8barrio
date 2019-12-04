@@ -1,0 +1,118 @@
+uuid: 27cfb7c4-5fe6-4a6b-a964-e879b18ea4f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.show.body
+    - field.field.node.show.field_a_partir_de
+    - field.field.node.show.field_dates
+    - field.field.node.show.field_distribution
+    - field.field.node.show.field_duree
+    - field.field.node.show.field_festival
+    - field.field.node.show.field_image
+    - field.field.node.show.field_lieu
+    - field.field.node.show.field_production
+    - field.field.node.show.field_sous_titre
+    - field.field.node.show.field_tarif
+    - image.style.bandeau_spectacle
+    - node.type.show
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.show.full
+targetEntityType: node
+bundle: show
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_a_partir_de:
+    weight: 10
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dates:
+    weight: 4
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd/m/Y\ H:i'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_distribution:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_duree:
+    weight: 9
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_festival:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: bandeau_spectacle
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_lieu:
+    weight: 8
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_production:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_sous_titre:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_tarif:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  links: true

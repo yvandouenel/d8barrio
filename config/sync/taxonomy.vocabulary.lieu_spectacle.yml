@@ -1,0 +1,8 @@
+uuid: c4c3d76c-cb0e-4d6e-a972-9f7cc241d0fc
+langcode: en
+status: true
+dependencies: {  }
+name: 'lieu spectacle'
+vid: lieu_spectacle
+description: ''
+weight: 0
