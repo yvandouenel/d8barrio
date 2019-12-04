@@ -97,14 +97,29 @@
 		{% endif %}
 	</header>
 	<div{{content_attributes.addClass('node__content','clearfix')}}>
-		{{ content.field_image }}
-		<h2 class="title-show-full">{{ label }}</h2>
-		{{ content.field_festival }}
-		{{ content.field_dates }}
-		{{ content.field_sous_titre	 }}
-		{{ content.body }}
-		{{ content.field_distribution }}
-		{{ content.field_production }}
+		<section id="hover-image">
+			{{ content.field_festival }}
+			{{ content.field_dates }}
+			<h2 class="title-show-full">{{ label }}</h2>
+			{{ content.field_sous_titre	 }}
+		</section>
+		{# gestion des deux colonnes #}
+		<div class="row">
+
+			<div class="col-md-4">
+				<button class="btn btn-primary">Réserver</button>
+				{{ content.field_tarif }}
+				{{ content.field_lieu }}
+				{{ content.field_duree }}
+				{{ content.field_a_partir_de }}
+			</div>
+			<div class="col-md-8" id="content-show">
+				{{ content.body }}
+				{{ content.field_distribution }}
+				{{ content.field_production }}
+			</div>
+		</div>
+
 
 	</div>
 </article>
