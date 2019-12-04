@@ -1,3 +1,6 @@
+# Ignore sass caches
+web/themes/custom/d8test/.sass-cache
+
 # Ignore services file
 web/sites/default/services.yml
 
