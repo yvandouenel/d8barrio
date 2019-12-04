@@ -7701,6 +7701,8 @@ img {
       margin: 0; }
     .node--type-show #main-wrapper #main #hover-image .title-show-full {
       font-size: 3rem; }
+  .node--type-show #main-wrapper #main #detail-show .field__label:after {
+    content: " : "; }
   @media (min-width: 768px) {
     .node--type-show #main-wrapper #main #content-show {
       order: -1; } }

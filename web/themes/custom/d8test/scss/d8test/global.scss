@@ -37,6 +37,13 @@ img {
           font-size: 3rem;
         }
       }
+      #detail-show {
+        .field__label {
+          &:after {
+            content: " : ";
+          }
+        }
+      }
       #content-show {
         @include media-breakpoint-up(md) {
           order: -1;
