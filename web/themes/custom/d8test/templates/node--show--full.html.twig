@@ -106,7 +106,7 @@
 		{# gestion des deux colonnes #}
 		<div class="row">
 
-			<div class="col-md-4">
+			<div class="col-md-4" id="detail-show">
 				<button class="btn btn-primary">Réserver</button>
 				{{ content.field_tarif }}
 				{{ content.field_lieu }}
@@ -114,9 +114,26 @@
 				{{ content.field_a_partir_de }}
 			</div>
 			<div class="col-md-8" id="content-show">
+				{% if node.field_distribution.value %}
+					<a href="#distribution">Distribution</a>
+				{% endif %}
+				{% if node.field_production.value %}
+					<a href="#production">Production</a>
+				{% endif %}
 				{{ content.body }}
-				{{ content.field_distribution }}
-				{{ content.field_production }}
+				{{ content.field_video }}
+				{% if node.field_distribution.value %}
+					<div id="distribution">
+						{{ content.field_distribution }}
+					</div>
+				{% endif %}
+				{% if node.field_production.value %}
+					<div id="production">
+						{{ content.field_production }}
+					</div>
+				{% endif %}
+
+
 			</div>
 		</div>
 
