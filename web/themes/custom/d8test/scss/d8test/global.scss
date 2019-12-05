@@ -6,3 +6,9 @@ img {
 .region-footer-first .field--type-text-with-summary p {
   color: black !important;
 }
+
+@mixin cartouche($bgcolor: black, $fgcolor: white) {
+  background: $bgcolor;
+  padding: 5px;
+  color: $fgcolor;
+}

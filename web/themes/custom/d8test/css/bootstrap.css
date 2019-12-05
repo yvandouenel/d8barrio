@@ -7713,10 +7713,12 @@ body.node--type-show #main-wrapper #main {
 
 body.path-spectacles .node--type-show {
   position: relative; }
-  body.path-spectacles .node--type-show .field--type-image {
-    position: relative; }
-    body.path-spectacles .node--type-show .field--type-image:after {
+  body.path-spectacles .node--type-show .field--type-image a {
+    position: relative;
+    display: block; }
+    body.path-spectacles .node--type-show .field--type-image a:after {
       content: "";
+      display: block;
       width: 100%;
       height: 75%;
       position: absolute;
@@ -7726,7 +7728,10 @@ body.path-spectacles .node--type-show {
     position: absolute;
     top: 5px; }
     body.path-spectacles .node--type-show .field--name-field-festival a {
-      color: white; }
+      color: white;
+      background: pink;
+      padding: 5px;
+      color: black; }
   body.path-spectacles .node--type-show .teaser-bottom-fields {
     padding: 0 15px;
     color: white;
