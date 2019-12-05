@@ -25,3 +25,7 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+jsdates:
+  version: VERSION
+  js:
+    js/manage-show-dates.js: {}

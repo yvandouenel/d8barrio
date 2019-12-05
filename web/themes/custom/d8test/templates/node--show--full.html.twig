@@ -60,6 +60,7 @@
  */
 #}
 {{ attach_library('bootstrap_barrio/node') }}
+{{ attach_library('d8test/jsdates') }}
 
 {%
   set classes = [
@@ -108,6 +109,11 @@
 
 			<div class="col-md-4" id="detail-show">
 				<button class="btn btn-primary">Réserver</button>
+				<div>
+					<label>Toutes les dates :
+					</label>
+					{{ content.field_dates }}
+				</div>
 				{{ content.field_tarif }}
 				{{ content.field_lieu }}
 				{{ content.field_duree }}
