@@ -7672,10 +7672,14 @@ a.close.disabled {
 img {
   max-width: 100%; }
 
-/* Gestion de la position de l'image et des champs des spectacles */
-.node--type-show .field--name-field-image {
+/* region footer */
+.region-footer-first .field--type-text-with-summary p {
+  color: black !important; }
+
+/* Pages de spectacle */
+body.node--type-show .field--name-field-image {
   position: relative; }
-  .node--type-show .field--name-field-image:after {
+  body.node--type-show .field--name-field-image:after {
     content: "";
     display: block;
     position: absolute;
@@ -7683,28 +7687,57 @@ img {
     height: 350px;
     width: 100%;
     background: linear-gradient(transparent, black); }
-.node--type-show #main-wrapper #main {
+body.node--type-show #main-wrapper #main {
   position: relative;
   top: -300px; }
-  .node--type-show #main-wrapper #main #hover-image {
+  body.node--type-show #main-wrapper #main #hover-image {
     color: white;
     height: 230px;
     margin-bottom: 40px; }
-    .node--type-show #main-wrapper #main #hover-image a {
+    body.node--type-show #main-wrapper #main #hover-image a {
       color: white; }
-    .node--type-show #main-wrapper #main #hover-image .field--name-field-festival,
-    .node--type-show #main-wrapper #main #hover-image .field--type-datetime,
-    .node--type-show #main-wrapper #main #hover-image .title-show-full {
+    body.node--type-show #main-wrapper #main #hover-image .field--name-field-festival,
+    body.node--type-show #main-wrapper #main #hover-image .field--type-datetime,
+    body.node--type-show #main-wrapper #main #hover-image .title-show-full {
       text-transform: uppercase;
       font-size: 2rem;
       /* 32px (16*2) */
       margin: 0; }
-    .node--type-show #main-wrapper #main #hover-image .title-show-full {
+    body.node--type-show #main-wrapper #main #hover-image .title-show-full {
       font-size: 3rem; }
-  .node--type-show #main-wrapper #main #detail-show .field__label:after {
+  body.node--type-show #main-wrapper #main #detail-show .field__label:after {
     content: " : "; }
   @media (min-width: 768px) {
-    .node--type-show #main-wrapper #main #content-show {
+    body.node--type-show #main-wrapper #main #content-show {
       order: -1; } }
+
+body.path-spectacles .node--type-show {
+  position: relative; }
+  body.path-spectacles .node--type-show .field--type-image {
+    position: relative; }
+    body.path-spectacles .node--type-show .field--type-image:after {
+      content: "";
+      width: 100%;
+      height: 75%;
+      position: absolute;
+      bottom: 10px;
+      background: linear-gradient(transparent, black); }
+  body.path-spectacles .node--type-show .field--name-field-festival {
+    position: absolute;
+    top: 5px; }
+    body.path-spectacles .node--type-show .field--name-field-festival a {
+      color: white; }
+  body.path-spectacles .node--type-show .teaser-bottom-fields {
+    padding: 0 15px;
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    width: 95%; }
+    body.path-spectacles .node--type-show .teaser-bottom-fields a {
+      color: white; }
+    body.path-spectacles .node--type-show .teaser-bottom-fields .buttons-teaser-show {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between; }
 
 /*# sourceMappingURL=bootstrap.css.map */

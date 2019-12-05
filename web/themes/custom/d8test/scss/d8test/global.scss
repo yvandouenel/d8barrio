@@ -1,54 +1,8 @@
 img {
   max-width: 100%;
 }
-/* Gestion de la position de l'image et des champs des spectacles */
-.node--type-show {
-  .field--name-field-image {
-    position: relative;
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 10px;
-      height: 350px;
-      width: 100%;
-      background: linear-gradient(transparent, black);
-    }
-  }
-  #main-wrapper {
-    #main {
-      position: relative;
-      top: -300px;
-      #hover-image {
-        color: white;
-        a {
-          color: white;
-        }
-        height: 230px;
-        margin-bottom: 40px;
-        .field--name-field-festival,
-        .field--type-datetime,
-        .title-show-full {
-          text-transform: uppercase;
-          font-size: 2rem; /* 32px (16*2) */
-          margin: 0;
-        }
-        .title-show-full {
-          font-size: 3rem;
-        }
-      }
-      #detail-show {
-        .field__label {
-          &:after {
-            content: " : ";
-          }
-        }
-      }
-      #content-show {
-        @include media-breakpoint-up(md) {
-          order: -1;
-        }
-      }
-    }
-  }
+
+/* region footer */
+.region-footer-first .field--type-text-with-summary p {
+  color: black !important;
 }
